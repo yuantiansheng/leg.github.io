@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -81,21 +81,24 @@ daovoice('update');
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="YTS's Home" type="application/atom+xml" />
 
 
 
 
 
 
+<meta name="description" content="帅得掉渣渣">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
 <meta property="og:url" content="http://yoursite.com/tags/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="YTS&#39;s Home">
+<meta property="og:description" content="帅得掉渣渣">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-26T14:47:25.578Z">
+<meta property="og:updated_time" content="2018-04-29T09:32:42.001Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
+<meta name="twitter:description" content="帅得掉渣渣">
 
 
 
@@ -103,7 +106,7 @@ daovoice('update');
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -114,9 +117,9 @@ daovoice('update');
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: 'KZF8AN1UHZ',
+      apiKey: '6d04101259a632f84bd198886304fd0a',
+      indexName: 'Blog',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -131,8 +134,26 @@ daovoice('update');
 
 
 
-  <title>标签 | Hexo</title>
+  <title>标签 | YTS's Home</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -163,7 +184,7 @@ daovoice('update');
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">YTS's Home</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -227,11 +248,69 @@ daovoice('update');
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-music">
+          <a href="/music/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
+            
+            音乐
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -270,7 +349,7 @@ daovoice('update');
                 目前共计 2 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Another-Tag/" style="font-size: 12px; color: #ccc">Another Tag</a> <a href="/tags/Testing/" style="font-size: 12px; color: #ccc">Testing</a>
+              <a href="/tags/开始使用hexo/" style="font-size: 12px; color: #ccc">开始使用hexo</a> <a href="/tags/随笔/" style="font-size: 12px; color: #ccc">随笔</a>
             </div>
           </div>
         
@@ -290,13 +369,6 @@ daovoice('update');
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
         </div>
         
@@ -322,8 +394,12 @@ daovoice('update');
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="袁天生" />
+            
+              <p class="site-author-name" itemprop="name">袁天生</p>
+              <p class="site-description motion-element" itemprop="description">帅得掉渣渣</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -333,7 +409,7 @@ daovoice('update');
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -344,7 +420,7 @@ daovoice('update');
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -381,6 +457,30 @@ daovoice('update');
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://mail.qq.com/" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://fontawesome.com/" target="_blank" title="Font Awesome">
+                      
+                        <i class="fa fa-fw fa-font-awesome"></i>Font Awesome</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://portal.qiniu.com/user/profile" target="_blank" title="七牛云">
+                      
+                        <i class="fa fa-fw fa-cloud"></i>七牛云</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://mp.weixin.qq.com/" target="_blank" title="微信">
+                      
+                        <i class="fa fa-fw fa-weixin"></i>微信</a>
+                  </span>
+                
             </div>
           
 
@@ -389,7 +489,7 @@ daovoice('update');
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
                 Links
@@ -397,11 +497,27 @@ daovoice('update');
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://macshuo.com/" title="MacTalk" target="_blank">MacTalk</a>
+                    <a href="https://hexo.io/" title="Hexo" target="_blank">Hexo</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://example.com/" title="Title" target="_blank">Title</a>
+                    <a href="http://theme-next.iissnan.com/" title="NexT" target="_blank">NexT</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://leancloud.cn/dashboard/applist.html#/apps" title="LeanCloud" target="_blank">LeanCloud</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.algolia.com/apps/KZF8AN1UHZ/explorer/browse/Blog" title="Algolia" target="_blank">Algolia</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://dashboard.daovoice.io/app/4b323b57/users?segment=all-users" title="DaoVoice" target="_blank">DaoVoice</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://nodejs.org/en/" title="node.js" target="_blank">node.js</a>
                   </li>
                 
               </ul>
@@ -432,7 +548,7 @@ daovoice('update');
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">袁天生</span>
 
   
 </div>
@@ -454,7 +570,7 @@ daovoice('update');
 
   <span>　<i class="fa fa-bomb"></i></span>
   <span id="showDays"></span>
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -650,6 +766,19 @@ daovoice('update');
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
