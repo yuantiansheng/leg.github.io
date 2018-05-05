@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[测试使用Markdown书写各种标签]]></title>
+    <title><![CDATA[学习使用Markdown书写各种标签]]></title>
     <url>%2F2018%2F04%2F29%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[这篇文章主要是测试各种Markdown的标签的使用方式为以后书写自己的博文做铺垫。 目录结构代码使用 ``` 高亮显示代码 123$(document).ready(function () &#123; alert('hello world');&#125;); 使用 4 空格缩进 def g(x): yield from range(x, 0, -1) yield from range(x) 字体斜体文本粗体文本粗斜体文本 链接文本链接：github网址链接：http://github.com/yuantiansheng 高级链接技巧：百度 Yahoo! 列表普通无序列表： 无序列表 无序列表 无序列表 普通有序列表： 列表前使用 [数字+空格] 我们会自动帮你添加数字 不用担心数字不对，显示的时候我们会自动把这行的 7 纠正为 3 列表嵌套： 列出所有元素： 无序列表元素 A 元素 A 的有序子列表 前面加四个空格 列表里的多段换行： 前面必须加四个空格， 这样换行，整体的格式不会乱 列表里引用： 前面空一行仍然需要在 &gt; 前面加四个空格 列表里代码段： 1前面四个空格，之后按代码语法 ``` 书写 或者直接空八个，引入代码块 引用普通引用： 引用文本前使用 [大于号+空格]折行可以不加，新起一行都要加上哦 引用嵌套引用： 最外层引用 多一个 &gt; 嵌套一层引用 可以嵌套很多层 图片 换行如果另起一行，只需在当前行结尾加 2 个空格 分隔符如果你有写分割线的习惯，可以新起一行输入三个减号-。当前后都有段落时，请空出一行： 前面的段落 后面的段落 -]]></content>
+    <content type="text"><![CDATA[这篇文章主要是测试各种Markdown的标签的使用方式为以后书写自己的博文做铺垫。 目录结构代码使用 ``` 高亮显示代码 123$(document).ready(function () &#123; alert('hello world');&#125;); 使用 4 空格缩进 def g(x): yield from range(x, 0, -1) yield from range(x) 字体斜体文本粗体文本粗斜体文本 链接文本链接：github网址链接：http://github.com/yuantiansheng 高级链接技巧：百度 Yahoo! 列表普通无序列表： 无序列表 无序列表 无序列表 普通有序列表： 列表前使用 [数字+空格] 我们会自动帮你添加数字 不用担心数字不对，显示的时候我们会自动把这行的 7 纠正为 3 列表嵌套： 列出所有元素： 无序列表元素 A 元素 A 的有序子列表 前面加四个空格 列表里的多段换行： 前面必须加四个空格， 这样换行，整体的格式不会乱 列表里引用： 前面空一行仍然需要在 &gt; 前面加四个空格 列表里代码段： 1前面四个空格，之后按代码语法 ``` 书写 或者直接空八个，引入代码块 引用普通引用： 引用文本前使用 [大于号+空格]折行可以不加，新起一行都要加上哦 引用嵌套引用： 最外层引用 多一个 &gt; 嵌套一层引用 可以嵌套很多层 图片 换行如果另起一行，只需在当前行结尾加 2 个空格 分隔符如果你有写分割线的习惯，可以新起一行输入三个减号-。当前后都有段落时，请空出一行： 前面的段落 后面的段落 your browser does not support the video tag your browser does not support the video tag -]]></content>
       <categories>
         <category>Markdown</category>
       </categories>
